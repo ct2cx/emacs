@@ -1,0 +1,11 @@
+*
+
+!.gitignore
+!LICENSE
+!README.md
+!early-init.el
+!init.el
+!lisp/
+!lisp/**
+lisp/**/*~
+lisp/**/#*#
