@@ -23,12 +23,21 @@
   :init
   (setq-default evil-want-C-u-scroll t)
   (setq-default evil-undo-system 'undo-redo)
+  (setq-default evil-want-keybinding nil)
   :demand t
   :config (evil-mode 1))
-(use-package goto-chg)
+
+(use-package goto-chg :after evil)
+
 (use-package evil-surround
+  :after evil
   :config
   (global-evil-surround-mode 1))
+
+(use-package evil-collection
+  :after evil
+  :config
+  (evil-collection-init))
 
 (use-package ace-window
   :config
