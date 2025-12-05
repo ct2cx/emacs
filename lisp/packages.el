@@ -18,3 +18,10 @@
   (global-treesit-auto-mode)
   ; changes fundamental major mode to tree-sitter mode for all supported langs
   (treesit-auto-add-to-auto-mode-alist 'all))
+
+(use-package evil
+  :init
+  (setq-default evil-want-C-u-scroll t)
+  :demand t
+  :config (evil-mode 1))
+(use-package goto-chg)
