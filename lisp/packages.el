@@ -26,3 +26,6 @@
   :demand t
   :config (evil-mode 1))
 (use-package goto-chg)
+(use-package evil-surround
+  :config
+  (global-evil-surround-mode 1))
