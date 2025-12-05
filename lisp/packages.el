@@ -22,6 +22,7 @@
 (use-package evil
   :init
   (setq-default evil-want-C-u-scroll t)
+  (setq-default evil-undo-system 'undo-redo)
   :demand t
   :config (evil-mode 1))
 (use-package goto-chg)
