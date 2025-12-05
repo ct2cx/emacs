@@ -42,3 +42,10 @@
 (use-package ace-window
   :config
   (global-set-key (kbd "M-o") 'ace-window))
+
+(use-package evil-nerd-commenter
+  :after evil
+  :config
+  (evilnc-default-hotkeys nil t)
+  (define-key evil-normal-state-map (kbd "gc") 'evilnc-comment-operator)
+  (define-key evil-visual-state-map (kbd "gc") 'evilnc-comment-operator))
